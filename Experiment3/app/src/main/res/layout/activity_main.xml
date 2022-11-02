@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Question 1. Use linear layout to create 4 buttons -->
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:orientation="vertical"-->
+<!--    android:divider="@color/black"-->
+<!--    >-->
+
+<!--    <Button-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_margin="25dp"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:inputType="text"-->
+<!--        android:text="Button 1" />-->
+<!--    <Button-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_margin="25dp"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:inputType="text"-->
+<!--            android:text="Button 2" />-->
+<!--    <Button-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_margin="25dp"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:inputType="text"-->
+<!--            android:text="Button 3" />-->
+<!--    <Button-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_margin="25dp"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:inputType="text"-->
+<!--            android:text="Button 4" />-->
+
+<!--</LinearLayout>-->
+
+
+<!--Question 2. Use Relative layout to make form which takes first name, second name , and a radio button for gender-->
+<!--<RelativeLayout-->
+<!--    xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:layout_alignParentTop="true"-->
+<!--    android:layout_alignParentEnd="true"-->
+<!--    android:layout_alignParentBottom="true"-->
+<!--    android:layout_alignParentStart="true"-->
+<!--    android:padding="20dp"-->
+<!--    >-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/firstName"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="25sp"-->
+<!--        android:layout_margin="2sp"-->
+<!--        android:textSize="15sp"-->
+<!--        android:layout_alignBaseline="@+id/textBofFirstName"-->
+<!--        android:text="First name"-->
+<!--        />-->
+
+<!--    <EditText-->
+<!--        android:id="@+id/textBofFirstName"-->
+<!--        android:layout_width="300sp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_toEndOf="@+id/firstName"-->
+<!--        android:layout_margin="2sp" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/secondName"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/firstName"-->
+<!--        android:layout_marginTop="25sp"-->
+<!--        android:gravity="bottom"-->
+<!--        android:layout_alignBaseline="@+id/textBofSecondName"-->
+<!--        android:textSize="15sp"-->
+<!--        android:text="Second name" />-->
+
+<!--    <EditText-->
+<!--        android:id="@+id/textBofSecondName"-->
+<!--        android:layout_width="300sp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/textBofFirstName"-->
+<!--        android:layout_marginTop="25sp"-->
+<!--        android:layout_toEndOf="@+id/secondName" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/genderText"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Gender : "-->
+<!--        android:layout_below="@+id/secondName"-->
+<!--        android:layout_marginTop="25sp"-->
+<!--        />-->
+
+<!--    <RadioGroup-->
+<!--        android:id="@+id/radio"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/genderText"-->
+<!--        android:orientation="vertical">-->
+
+<!--        <RadioButton-->
+<!--            android:id="@+id/maleRadio"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+
+<!--            android:text="Male" />-->
+
+<!--        <RadioButton-->
+<!--            android:id="@+id/femaleRadio"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Female" />-->
+
+<!--    </RadioGroup>-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/DOB"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Date of birth : "-->
+<!--        android:layout_below="@+id/radio"-->
+<!--        android:layout_marginTop="25sp"-->
+<!--        />-->
+
+<!--    <DatePicker-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/DOB"-->
+<!--        android:layout_marginTop="5dp" />-->
+<!--</RelativeLayout>-->
+
+
+<!--Q.3 Try table layout -->
+<!--<TableLayout-->
+<!--    xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:shrinkColumns="*"-->
+<!--    android:stretchColumns="*"-->
+<!--    android:layout_margin="10dp"-->
+<!--    >-->
+
+
+<!--    <TableRow-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:background="#3C3939"-->
+
+<!--        >-->
+
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_span="3"-->
+<!--            android:gravity="center"-->
+<!--            android:text="This is Row 1"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textSize="20sp" />-->
+<!--    </TableRow>-->
+
+<!--    <TableRow-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:background="#808080">-->
+
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_weight="1"-->
+<!--            android:gravity="center"-->
+<!--            android:padding="3dip"-->
+
+<!--            android:text="Row 2 Column 1"-->
+<!--            android:textSize="20sp" />-->
+
+<!--        <TextView-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_weight="1"-->
+<!--            android:gravity="center"-->
+<!--            android:padding="3dip"-->
+<!--            android:text="Row 2 Column 2"-->
+<!--            android:textSize="20sp" />-->
+
+<!--        <TextView-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_weight="1"-->
+<!--            android:gravity="center"-->
+<!--            android:padding="3dip"-->
+<!--            android:text="Row 2 Column 3"-->
+<!--            android:textSize="20sp" />-->
+<!--    </TableRow>-->
+
+<!--    <TableRow-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:background="#5E5C5B">-->
+
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_weight="1"-->
+<!--            android:gravity="center"-->
+<!--            android:padding="3dip"-->
+<!--            android:text="Row 3 Column 1"-->
+<!--            android:textSize="20sp" />-->
+
+<!--        <TextView-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_weight="1"-->
+<!--            android:gravity="center"-->
+<!--            android:padding="3dip"-->
+<!--            android:text="Row 3 Column 2"-->
+<!--            android:textSize="20sp" />-->
+
+<!--        <TextView-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_weight="1"-->
+<!--            android:gravity="center"-->
+<!--            android:padding="3dip"-->
+<!--            android:text="Row 3 Column 3"-->
+<!--            android:textSize="20sp" />-->
+<!--    </TableRow>-->
+
+<!--    <TableRow-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:background="#3C3A3A">-->
+
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_weight="1"-->
+<!--            android:gravity="center"-->
+<!--            android:padding="3dip"-->
+<!--            android:text="Row 4 Column 1"-->
+<!--            android:textSize="20sp" />-->
+
+<!--        <TextView-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_weight="1"-->
+<!--            android:gravity="center"-->
+<!--            android:padding="3dip"-->
+<!--            android:text="Row 4 Column 2"-->
+<!--            android:textSize="20sp" />-->
+
+
+<!--    </TableRow>-->
+
+<!--    <TableRow-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:background="#3C3939"-->
+<!--        >-->
+
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_span="3"-->
+<!--            android:gravity="center"-->
+
+<!--            android:text="This is Row 5"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textSize="20sp" />-->
+<!--    </TableRow>-->
+<!--</TableLayout>-->
+
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:rowCount="4"
+    android:columnCount="2"
+
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_height="90dp"
+        android:layout_width="130dp"
+        android:layout_margin="10dp"
+        android:src="https://picsum.photos/200"
+        />
+
+    <ImageView
+        android:layout_height="90dp"
+        android:layout_width="200dp"
+        android:layout_margin="10dp"
+        android:src="https://picsum.photos/200"
+        />
+
+    <ImageView
+        android:layout_height="90dp"
+        android:layout_width="130dp"
+        android:layout_margin="10dp"
+        android:src="https://picsum.photos/200"
+        />
+
+    <ImageView
+        android:layout_height="90dp"
+        android:layout_width="200dp"
+        android:layout_margin="10dp"
+        android:src="https://picsum.photos/200"
+        />
+
+
+</GridLayout>
+
+<!--<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    tools:context=".MainActivity">-->
+
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Login Form"-->
+<!--        android:layout_marginTop="50dp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--</androidx.constraintlayout.widget.ConstraintLayout>-->

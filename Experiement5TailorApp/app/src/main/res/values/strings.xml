@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Experiement 5 Tailor App</string>
+    <string-array name="sizes_available">
+        <item>L</item>
+        <item>XL</item>
+        <item>XXL</item>
+    </string-array>
+</resources>

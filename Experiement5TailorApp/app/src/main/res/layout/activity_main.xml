@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name :- "
+        android:layout_marginHorizontal="50sp"
+        android:layout_marginVertical="50sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/nameText"
+        app:layout_constraintBottom_toTopOf="@id/phoneNo"
+        />
+
+    <EditText
+        android:id="@+id/nameText"
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="50sp"
+        android:layout_marginHorizontal="50sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBaseline_toBottomOf="@id/name"
+        app:layout_constraintBottom_toTopOf="@id/phoneNoText"
+        />
+    <TextView
+        android:id="@+id/phoneNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone number :- "
+        android:layout_marginHorizontal="50sp"
+        android:layout_marginVertical="50sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/name" />
+
+    <EditText
+        android:id="@+id/phoneNoText"
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="50sp"
+        android:layout_marginHorizontal="50sp"
+
+        app:layout_constraintTop_toBottomOf="@id/nameText"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBaseline_toBottomOf="@id/phoneNo"
+
+        />
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Address :-"
+        android:layout_marginHorizontal="50sp"
+        android:layout_marginVertical="50sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/phoneNo" />
+
+    <EditText
+        android:id="@+id/addressText"
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="50sp"
+        android:layout_marginHorizontal="50sp"
+
+        app:layout_constraintTop_toBottomOf="@id/phoneNoText"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBaseline_toBottomOf="@id/address"
+        />
+
+    <TextView
+            android:id="@+id/height"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Height :-"
+            android:layout_marginHorizontal="50sp"
+            android:layout_marginVertical="50sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/address" />
+
+    <EditText
+            android:id="@+id/heightText"
+            android:layout_width="150sp"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="50sp"
+            android:layout_marginHorizontal="50sp"
+
+            app:layout_constraintTop_toBottomOf="@id/addressText"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBaseline_toBottomOf="@id/height"
+        />
+
+    <TextView
+        android:id="@+id/gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gender :-"
+        android:layout_marginHorizontal="50sp"
+        android:layout_marginVertical="50sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/height" />
+
+
+    <RadioGroup
+            android:id="@+id/radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/gender"
+            android:layout_marginHorizontal="50sp"
+            android:layout_marginVertical="15sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/maleRadio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:text="Male" />
+
+            <RadioButton
+                android:id="@+id/femaleRadio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Female" />
+
+        </RadioGroup>
+
+    <TextView
+        android:id="@+id/size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Size :-"
+        android:layout_marginHorizontal="50sp"
+        android:layout_marginVertical="50sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/radio" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="149dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="44dp"
+        app:layout_constraintBaseline_toBottomOf="@id/size"
+        app:layout_constraintLeft_toRightOf="@id/size"
+        tools:layout_editor_absoluteY="500dp" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        app:layout_constraintTop_toBottomOf="@id/size"
+        android:layout_marginVertical="50dp"
+        android:layout_marginHorizontal="50dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+
+        />
+    <TextView
+        android:id="@+id/priceText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Price :- "
+        android:layout_marginHorizontal="50sp"
+        android:layout_marginVertical="50sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/submit" />
+
+    <EditText
+        android:id="@+id/price"
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="50sp"
+        android:layout_marginHorizontal="50sp"
+
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBaseline_toBottomOf="@id/priceText"
+
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

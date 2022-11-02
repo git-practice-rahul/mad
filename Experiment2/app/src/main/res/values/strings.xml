@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Experiment 2</string>
+    <string name="str1">This is through string tag</string>
+    <string name="str2">This is another string tag</string>
+</resources>
