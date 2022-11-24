@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
                 int radioId = radioGroup.getCheckedRadioButtonId();
                 gender = (RadioButton) findViewById(radioId);
                 String size = sizeChoice.getSelectedItem().toString();
-                String selectedGender =  gender.toString();
+                String selectedGender =  gender.getText().toString();
                 height = Float.parseFloat(heightText.getText()+ "");
                 Log.i("size : ", size);
                 Log.i("gender : ", selectedGender);

@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Experiment 5 Dice Roller</string>
+    <string name="random_text">Random number is : </string>
+</resources>
